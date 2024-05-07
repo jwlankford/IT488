@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hafapp',
-    'pwa',
-    'rest_framework'
+    'pwa'
 ]
 
 MIDDLEWARE = [
