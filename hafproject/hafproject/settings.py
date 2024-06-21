@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hafapp',
-    'pwa'
+    'pwa',
+    'django_bootstrap5',
+    'fontawesomefree',
+    'crispy_forms',
+    "crispy_bootstrap4",
 ]
 
 MIDDLEWARE = [
@@ -53,10 +57,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'hafproject.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['hafapp/templates'],
+        'DIRS': [BASE_DIR / 'hafapp/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
